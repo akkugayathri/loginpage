@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url('https://thumbs.dreamstime.com/b/beautiful-greenary-nature-beautiful-greenary-nature-189811357.jpg') no-repeat center center/cover;
+    }
+
+    .bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .l-box {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 30px;
+        width: 300px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+    }
+
+    .l-box h1 {
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .inp-group {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .submit {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .reset {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .submit:hover {
+        background-color: darkgreen;
+    }
+
+    .reset:hover {
+        background-color: darkred;
+    }
+</style>
+</head>
+<body>
+<div class="bg">
+    <div class="l-box">
+        <h1>Login</h1>
+        <form>
+            <input class="inp-group" type="email" placeholder="Enter your email address" required>
+            <input class="inp-group" type="password" placeholder="Enter your password" required>
+            <div class="btn">
+                <input class="submit" type="submit" value="Submit">
+                <input class="reset" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
